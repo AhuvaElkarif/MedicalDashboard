@@ -50,7 +50,7 @@ export const ReusableTable: React.FC<ReusableTableProps> = ({
               {config.columns.map((column, idx) => (
                 <TableCell 
                   key={idx} 
-                  align={column.align || "center"}
+                  align={column.align || "right"}
                   style={{ 
                     width: column.width || `${100 / config.columns.length}%`,
                     position: 'sticky',
@@ -79,7 +79,7 @@ export const ReusableTable: React.FC<ReusableTableProps> = ({
                 {config.columns.map((column, colIdx) => (
                   <TableCell 
                     key={colIdx} 
-                    align={column.align || "center"}
+                    align={column.align || "right"}
                     style={{ 
                       width: column.width || `${100 / config.columns.length}%`,
                     }}

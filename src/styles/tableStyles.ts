@@ -118,7 +118,6 @@ export const tableStyles: Record<string, SxProps<Theme>> = {
     px: 0.75,
     py: 0.25,
     minWidth: 20,
-    textAlign: "center",
     background: "#fff",
     fontWeight: 400,
   },
@@ -135,7 +134,6 @@ export const tableStyles: Record<string, SxProps<Theme>> = {
   messageBadge: {
     display: "flex",
     alignItems: "center",
-    justifyContent: "center",
     "& .MuiBadge-badge": {
       fontSize: "0.45rem",
       minWidth: "10px",
@@ -150,7 +148,6 @@ export const tableStyles: Record<string, SxProps<Theme>> = {
   headerCell: {
     display: "flex",
     alignItems: "center",
-    justifyContent: "center",
     gap: 0.125,
     minHeight: "14px",
     fontSize: "0.6rem",
@@ -167,7 +164,6 @@ export const tableStyles: Record<string, SxProps<Theme>> = {
     ".MuiSelect-select": {
       display: "flex",
       alignItems: "center",
-      justifyContent: "center",
       padding: "0 12px 0 6px",
       minHeight: "14px",
       lineHeight: "1.2",
@@ -181,6 +177,5 @@ export const tableStyles: Record<string, SxProps<Theme>> = {
       fontSize: "0.75rem",
       right: 2,
     },
-    textAlign: "center",
   },
 };
