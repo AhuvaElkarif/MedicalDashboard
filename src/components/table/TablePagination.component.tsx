@@ -23,7 +23,7 @@ export const TablePagination: React.FC<TablePaginationProps> = ({
     >
       <KeyboardDoubleArrowRight fontSize="small" />
     </IconButton>
-    <Typography sx={{ fontSize: "0.95rem", color: "#bbb", mx: 0.5 }}>
+    <Typography sx={{ fontSize: "0.7rem", color: "#bbb", mx: 0.5 }}>
       עבור לדף
     </Typography>
     <Typography sx={tableStyles.pageNumber}>{currentPage}</Typography>

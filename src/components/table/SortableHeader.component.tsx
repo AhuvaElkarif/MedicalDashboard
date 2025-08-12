@@ -1,6 +1,6 @@
-import React from 'react';
-import { Box } from '@mui/material';
-import { ArrowDropUp, ArrowDropDown, FilterList } from '@mui/icons-material';
+import React from "react";
+import { Box } from "@mui/material";
+import { ArrowDropUp, ArrowDropDown, FilterList } from "@mui/icons-material";
 
 interface SortableHeaderProps {
   label: string;
@@ -11,12 +11,11 @@ export const SortableHeader: React.FC<SortableHeaderProps> = ({ label }) => (
     sx={{
       display: "flex",
       alignItems: "center",
-      color: "#999",
       lineHeight: "10px",
     }}
   >
     <span>{label}</span>
-    <FilterList fontSize="small" sx={{ color: "#999", height: "12px" }} />
+    <FilterList fontSize="small" sx={{ height: "12px" }} />
     <Box
       sx={{
         display: "flex",
@@ -30,7 +29,6 @@ export const SortableHeader: React.FC<SortableHeaderProps> = ({ label }) => (
       <ArrowDropDown
         fontSize="small"
         sx={{
-          color: "#999",
           marginBottom: "-8px",
           height: "12px",
         }}
@@ -38,7 +36,6 @@ export const SortableHeader: React.FC<SortableHeaderProps> = ({ label }) => (
       <ArrowDropUp
         fontSize="small"
         sx={{
-          color: "#999",
           marginTop: "-8px",
           height: "12px",
         }}

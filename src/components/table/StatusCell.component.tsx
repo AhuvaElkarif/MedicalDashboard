@@ -1,14 +1,17 @@
 import React from 'react';
 import { Select, MenuItem } from '@mui/material';
 import { getStatusConfig } from '../../utils/statusUtils';
-import { tableStyles } from '../../styles/tableStyles';
 
 interface StatusCellProps {
   status: string;
   disabled?: boolean;
+  onChange?: (status: string) => void;
 }
 
-export const StatusCell: React.FC<StatusCellProps> = ({ status, disabled = true }) => {
+export const StatusCell: React.FC<StatusCellProps> = ({ 
+  status, 
+  disabled = true,
+}) => {
   const statusConfig = getStatusConfig(status);
   
   return (
@@ -16,11 +19,33 @@ export const StatusCell: React.FC<StatusCellProps> = ({ status, disabled = true 
       value={status}
       size="small"
       sx={{
-        ...tableStyles.statusSelect,
+        borderRadius: "10px",
+        minWidth: 50,
+        height: 12,
+        fontSize: "0.5rem",
         background: statusConfig.background,
         color: statusConfig.color,
         fontWeight: 500,
-        fontSize: "1rem",
+        '.MuiSelect-select': {
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          padding: "0 10px 0 6px",
+          minHeight: "14px",
+          lineHeight: "1",
+        },
+        '.MuiOutlinedInput-notchedOutline': { 
+          border: "none" 
+        },
+        '.MuiOutlinedInput-root': { 
+          padding: 0,
+          fontSize: "0.5rem",
+        },
+        '.MuiSelect-icon': {
+          fontSize: "0.7rem",
+          right: 3,
+        },
+        textAlign: "center",
       }}
       displayEmpty
       disabled={disabled}
@@ -31,26 +56,15 @@ export const StatusCell: React.FC<StatusCellProps> = ({ status, disabled = true 
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          gap: 1,
+          gap: 0.25,
           color: statusConfig.color,
           fontWeight: 500,
-          fontSize: "1rem",
+          fontSize: "0.5rem",
           background: "transparent",
+          minHeight: "18px",
+          padding: "1px 6px",
         }}
       >
-        <svg
-          style={{
-            marginLeft: 6,
-            width: 18,
-            height: 18,
-            color: statusConfig.color,
-          }}
-          focusable="false"
-          aria-hidden="true"
-          viewBox="0 0 24 24"
-        >
-          <path d="M7 10l5 5 5-5z" />
-        </svg>
         {status}
       </MenuItem>
     </Select>
