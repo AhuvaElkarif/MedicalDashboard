@@ -29,6 +29,7 @@ export const tableStyles: Record<string, SxProps<Theme>> = {
   },
 
   tableContainer: {
+    padding: "8px 0",
     background: "#fff",
     border: "1px solid #2196f3",
     borderRadius: "0 0 6px 6px",
@@ -103,11 +104,9 @@ export const tableStyles: Record<string, SxProps<Theme>> = {
     justifyContent: "flex-end",
     borderTop: "1px solid #e0e0e0",
     px: 1,
-    py: 0.5,
     background: "#fff",
     borderRadius: "0 0 6px 6px",
-    gap: 0.5,
-    minHeight: "30px",
+    minHeight: "20px",
   },
 
   pageNumber: {
