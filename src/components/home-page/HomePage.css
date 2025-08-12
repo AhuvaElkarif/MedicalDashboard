@@ -1,0 +1,9 @@
+.home-page-container {
+position: relative;
+  right: 3rem;
+  background-color: rgba(226, 242, 248, 0.9);
+  box-sizing: border-box;
+  width: calc(100% - 3rem);
+  padding: 1rem;
+  height: calc(100vh - 7rem);
+}

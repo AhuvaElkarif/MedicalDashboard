@@ -1,0 +1,31 @@
+.btn {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  font-size: 0.82rem;
+  font-weight: 400;
+  border-radius: 0.25rem;
+  border: 0.0625rem solid transparent;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+  min-height: 2.25rem;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-outlined {
+  background-color: transparent;
+  border-style: solid;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+.btn-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.25rem;
+  flex-shrink: 0;
+}
