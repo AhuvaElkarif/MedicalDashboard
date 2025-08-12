@@ -6,12 +6,12 @@ import "./HomePage.css";
 
 const HomePage: React.FC = () => {
   return (
-    <>
+    <div className="home-page-container">
       <ButtonSection />
       <RequestsTable />
       <AlertsTable/>
       <ArrayAlertsTable />
-    </>
+    </div>
   );
 };
 export default HomePage;
