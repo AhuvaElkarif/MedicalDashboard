@@ -7,12 +7,12 @@ export default function AppRoutes() {
     <Layout>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/users" element={<></>} />
-        <Route path="/calendar" element={<></>} />
-        <Route path="/analytics" element={<></>} />
-        <Route path="/reports" element={<></>} />
-        <Route path="/settings" element={<></>} />
-        <Route path="/more" element={<></>} />
+        <Route path="/users" element={<HomePage />} />
+        <Route path="/calendar" element={<HomePage />} />
+        <Route path="/analytics" element={<HomePage />} />
+        <Route path="/reports" element={<HomePage />} />
+        <Route path="/settings" element={<HomePage />} />
+        <Route path="/more" element={<HomePage />} />
       </Routes>
     </Layout>
   );
