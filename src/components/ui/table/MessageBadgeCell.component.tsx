@@ -1,7 +1,7 @@
 import React from 'react';
 import { Badge } from '@mui/material';
 import { ChatBubbleOutline } from '@mui/icons-material';
-import { getMessageCount } from '../../utils/statusUtils';
+import { getMessageCount } from '../../../utils/statusUtils';
 
 interface MessageBadgeCellProps {
   row: any;

@@ -1,7 +1,7 @@
 import React from "react";
-import Button from "../button/Button.component";
 import { StarIcon } from "lucide-react";
 import "./ButtonSection.css";
+import Button from "../ui/button/Button.component";
 
 interface ButtonProps {
   text: string;
@@ -53,6 +53,7 @@ const buttons: ButtonProps[] = [
     icon: <StarIcon />,
   },
 ];
+
 const ButtonSection: React.FC = () => {
   return (
     <div className="button-section-container">

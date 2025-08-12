@@ -1,10 +1,10 @@
 import { IconButton } from "@mui/material";
 import { Email, Add, Sort, ChatBubbleOutline } from "@mui/icons-material";
-import type { TableColumn } from "../../types/types";
-import { MessageBadgeCell } from "../table/MessageBadgeCell.component";
-import { SortableHeader } from "../table/SortableHeader.component";
-import { tableStyles } from "../../styles/tableStyles";
-import { StatusCell } from "../table/StatusCell.component";
+import type { TableColumn } from "../../../types/types";
+import { tableStyles } from "../../../styles/tableStyles";
+import { SortableHeader } from "../../ui/table/SortableHeader.component";
+import { MessageBadgeCell } from "../../ui/table/MessageBadgeCell.component";
+import { StatusCell } from "../../ui/table/StatusCell.component";
 
 export const requestColumns: TableColumn[] = [
   {

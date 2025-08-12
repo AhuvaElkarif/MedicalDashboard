@@ -12,9 +12,9 @@ import {
   IconButton,
 } from "@mui/material";
 import { FilterList, ChevronLeft } from "@mui/icons-material";
-import { tableStyles } from "../../styles/tableStyles";
-import type { PaginationConfig, TableConfig } from "../../types/types";
 import { TablePagination } from "./TablePagination.component";
+import type { PaginationConfig, TableConfig } from "../../../types/types";
+import { tableStyles } from "../../../styles/tableStyles";
 
 interface ReusableTableProps {
   data: any[];

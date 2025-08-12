@@ -15,12 +15,12 @@ export const tableStyles: Record<string, SxProps<Theme>> = {
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
-    minHeight: "28px",
+    minHeight: "30px",
   },
 
   title: {
     fontWeight: 600,
-    fontSize: "0.75rem",
+    fontSize: "0.8rem",
     color: "#2196f3",
     ml: 0.5,
     display: "flex",
@@ -43,45 +43,39 @@ export const tableStyles: Record<string, SxProps<Theme>> = {
     
     "& .MuiTableHead-root": {
       "& .MuiTableRow-root": {
-        height: "20px !important",
-        minHeight: "20px !important",
+        minHeight: "26px !important",
       },
       "& .MuiTableCell-root": {
-        padding: "1px 3px !important",
-        fontSize: "0.6rem !important",
+        padding: { xs: "4px 6px !important", sm: "5px 8px !important" },
+        fontSize: { xs: "0.7rem !important", sm: "0.75rem !important" },
         fontWeight: "600 !important",
-        backgroundColor: "#f8f9ff !important",
         borderBottom: "1px solid #e3e7f1 !important",
-        whiteSpace: "nowrap !important",
-        lineHeight: "1 !important",
-        height: "20px !important",
-        minHeight: "20px !important",
-        maxHeight: "20px !important",
+        whiteSpace: "normal !important", 
+        overflowWrap: "break-word !important",
+        wordBreak: "break-word !important",
+        lineHeight: "1.4 !important",
+        height: "auto !important", 
+        minHeight: { xs: "26px !important", sm: "28px !important" },
         verticalAlign: "middle !important",
         boxSizing: "border-box !important",
-        overflow: "hidden !important",
-        textOverflow: "ellipsis !important",
       },
     },
     
     "& .MuiTableBody-root": {
       "& .MuiTableRow-root": {
-        height: "18px !important",
-        minHeight: "18px !important",
-        maxHeight: "18px !important",
+        minHeight: "20px !important",
         "&:hover": {
           backgroundColor: "#f5f7ff !important",
         },
       },
       "& .MuiTableCell-root": {
-        padding: "0px 2px !important",
-        fontSize: "0.55rem !important",
+        padding: { xs: "2px 4px !important", sm: "3px 5px !important" },
+        fontSize: { xs: "0.65rem !important", sm: "0.7rem !important" },
         borderBottom: "1px solid #f0f0f0 !important",
         whiteSpace: "nowrap !important",
-        lineHeight: "1 !important",
-        height: "18px !important",
-        minHeight: "18px !important",
-        maxHeight: "18px !important",
+        lineHeight: "1.2 !important",
+        height: "auto !important",
+        minHeight: "20px !important",
         verticalAlign: "middle !important",
         overflow: "hidden !important",
         textOverflow: "ellipsis !important",
@@ -91,15 +85,13 @@ export const tableStyles: Record<string, SxProps<Theme>> = {
     
     "@media (max-width: 768px)": {
       "& .MuiTableHead-root .MuiTableCell-root": {
-        padding: "2px 4px !important",
-        fontSize: "0.65rem !important",
-        height: "22px !important",
-        minHeight: "22px !important",
+        padding: "3px 5px !important",
+        fontSize: "0.7rem !important",
+        minHeight: "24px !important",
       },
       "& .MuiTableBody-root .MuiTableCell-root": {
-        padding: "1px 3px !important",
-        fontSize: "0.6rem !important",
-        height: "20px !important",
+        padding: "2px 4px !important",
+        fontSize: "0.65rem !important",
         minHeight: "20px !important",
       },
     },
@@ -115,11 +107,11 @@ export const tableStyles: Record<string, SxProps<Theme>> = {
     background: "#fff",
     borderRadius: "0 0 6px 6px",
     gap: 0.5,
-    minHeight: "28px",
+    minHeight: "30px",
   },
 
   pageNumber: {
-    fontSize: "0.65rem",
+    fontSize: "0.7rem",
     color: "#888",
     mx: 0.25,
     border: "1px solid #ddd",
@@ -137,7 +129,7 @@ export const tableStyles: Record<string, SxProps<Theme>> = {
     minWidth: "14px",
     minHeight: "14px",
     "& .MuiSvgIcon-root": {
-      fontSize: "0.7rem",
+      fontSize: "0.75rem",
     },
   },
 
@@ -162,31 +154,32 @@ export const tableStyles: Record<string, SxProps<Theme>> = {
     justifyContent: "center",
     gap: 0.125,
     minHeight: "14px",
-    fontSize: "0.55rem",
+    fontSize: "0.6rem",
     "& .MuiSvgIcon-root": {
       fontSize: "0.65rem",
     },
   },
-   statusSelect: {
+
+  statusSelect: {
     borderRadius: "12px",
     minWidth: 80,
-    height: 18,
-    fontSize: "0.55rem",
+    height: 20,
+    fontSize: "0.6rem",
     ".MuiSelect-select": {
       display: "flex",
       alignItems: "center",
       justifyContent: "center",
       padding: "0 12px 0 6px",
       minHeight: "14px",
-      lineHeight: "1",
+      lineHeight: "1.2",
     },
     ".MuiOutlinedInput-notchedOutline": { border: "none" },
     ".MuiOutlinedInput-root": {
       padding: 0,
-      fontSize: "0.55rem",
+      fontSize: "0.6rem",
     },
     ".MuiSelect-icon": {
-      fontSize: "0.7rem",
+      fontSize: "0.75rem",
       right: 2,
     },
     textAlign: "center",

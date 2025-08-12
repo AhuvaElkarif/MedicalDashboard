@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import type { TableConfig } from "../../types/types";
-import { ReusableTable } from "../table/ReusableTable.component";
-import { medications } from "../../data/sampleData";
-import {requestColumns} from "./requsetData";
+import {requestColumns} from "./requsetColumns";
+import type { TableConfig } from "../../../types/types";
+import { ReusableTable } from "../../ui/table/ReusableTable.component";
+import { medications } from "../../../data/requestData";
 
 export const RequestsTable: React.FC = () => {
   const [currentPage, setCurrentPage] = useState(1);

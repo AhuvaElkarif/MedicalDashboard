@@ -4,8 +4,8 @@ import {
   KeyboardDoubleArrowLeft,
   KeyboardDoubleArrowRight,
 } from "@mui/icons-material";
-import { tableStyles } from "../../styles/tableStyles";
-import type { PaginationConfig } from "../../types/types";
+import type { PaginationConfig } from "../../../types/types";
+import { tableStyles } from "../../../styles/tableStyles";
 
 interface TablePaginationProps extends PaginationConfig {}
 

@@ -1,0 +1,26 @@
+export const alertsData = [
+  {
+    actions: null,
+    status: "פעיל",
+    treatmentDate: "29.6.2025",
+    treatmentDescription: "נשלחה בקשה",
+    alertDescription: "שינוי מינון תרופה",
+    alertName: "ALDACTONE TAB 25 mg",
+    medicine: "ALDACTONE TAB 25 mg",
+    idNumber: "205488290",
+    patientName: "ישראל ישראלי xxx",
+    messages: 1,
+  },
+  {
+    actions: null,
+    status: "פעיל",
+    treatmentDate: "29.6.2025",
+    treatmentDescription: "בוצעה שיחה מול הקופה, יש לשלוח טפסים מחדש",
+    alertDescription: "הקמת בקשה חדשה",
+    alertName: "ASPIRIN CARDIO (BAYER) TAB",
+    medicine: "ASPIRIN CARDIO (BAYER) TAB",
+    idNumber: "031769420",
+    patientName: "יעקב יעקובי",
+    messages: 0,
+  },
+];
